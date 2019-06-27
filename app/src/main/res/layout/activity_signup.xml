@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="@drawable/background_3"
+    tools:context="com.geekbounty.directme.Authentication.SignupActivity">
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:src="@drawable/direct_me"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Direct Tour Campus Navigation"
+        android:textColor="#4455ff"/>
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:id="@+id/userEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="13dp"/>
+
+    <EditText
+        android:id="@+id/userPass"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Password"
+        android:paddingLeft="13dp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/signupBtn"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textColor="#50a675"
+        android:text="Create Account"/>
+
+    <TextView
+        android:id="@+id/signupText"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:textColor="#3d6cca"
+        android:textSize="16dp"
+        android:layout_gravity="center"
+        android:text="Already have an Account? Login"
+        android:onClick="onSigninHandler"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Made with love from CPE FUTMX"
+        android:layout_marginTop="15sp"
+        android:textColor="#ff0000"
+        android:layout_gravity="center"/>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"/>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    tools:context="com.geekbounty.directme.HomeActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_marginTop="20dp"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/direct_me"/>
+
+    <TextView
+        android:id="@+id/logo_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:text="Direct Tour Campus Navigation"
+        android:textColor="#4455ff"/>
+
+    <TextView
+        android:id="@+id/welcomeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/logo_name"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Welcome to Diret tour Campus \nNavigation Application developed the Department\n of Computer Engineering\n\nClick the button below to View and Navigate\nin real-time to place of Interest in the Institution"
+        android:textColor="#696363"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/welcomeMessage"
+        android:textColor="#4455ff"
+        android:text="Navigate in Realtime"
+        android:onClick="mapNavHandler"/>
+
+
+    <Button
+        android:id="@+id/signupBtn"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="20dp"
+        android:text="Logout"
+        android:textColor="#50a675"
+        android:onClick="logoutHandler"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>
